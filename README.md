@@ -1,6 +1,6 @@
 # Privilegierte-Konten-Check – wer hat Administratorrechte im Active Directory?
 
-Kostenloses PowerShell-Skript: zeigt, **wer in Ihrem Active Directory Administratorrechte hat**, auch über verschachtelte Gruppen, und prüft diese Konten in **7 Punkten**. Ergebnis ist ein übersichtlicher **HTML-Bericht auf Deutsch**. Es arbeitet **ausschließlich lesend**: Es ändert nichts, legt nichts an und überträgt keine Daten.
+Kostenloses PowerShell-Skript: zeigt, **wer in Ihrem Active Directory Administratorrechte hat**, auch über verschachtelte Gruppen, und prüft diese Konten in **7 Punkten**. Ergebnis ist ein übersichtlicher **HTML-Bericht auf Deutsch oder Englisch** (`-Language de|en`, Standard je nach Windows-Sprache). Es arbeitet **ausschließlich lesend**: Es ändert nichts, legt nichts an und überträgt keine Daten.
 
 ![Beispielbericht](Beispielbericht.png)
 
@@ -48,6 +48,31 @@ Dazu kommen der **Kerberos-Altlasten-Check** (Delegierung, schwache Verschlüsse
 - [AD-Schnellcheck](https://github.com/jackyno7/ad-schnellcheck) (8 Prüfpunkte zur Domäne)
 - [Zertifikate-Bericht](https://github.com/jackyno7/zertifikate-bericht) (abgelaufene und bald ablaufende Zertifikate auf Windows-Servern)
 
+<!-- querverweis:anfang -->
+## Alle Skripte und Vorlagen
+
+Übersicht aller Prüfskripte und Vorlagen: **[github.com/jackyno7](https://github.com/jackyno7)**
+
+Vollversionen:
+
+- Active Directory Prüfbericht: [Etsy](https://www.etsy.com/listing/4588853943) · [Gumroad](https://mueller86.gumroad.com/l/fcneoc)
+- Domänencontroller-Gesundheitsbericht: [Etsy](https://www.etsy.com/listing/4593087246) · [Gumroad](https://mueller86.gumroad.com/l/bseljr)
+- DNS- und DHCP-Bericht: [Etsy](https://www.etsy.com/listing/4593096270) · [Gumroad](https://mueller86.gumroad.com/l/sthgh)
+- Kerberos- und Altlasten-Check: [Etsy](https://www.etsy.com/listing/4593092377) · [Gumroad](https://mueller86.gumroad.com/l/zptvct)
+- Berechtigungsbericht Active Directory: [Etsy](https://www.etsy.com/listing/4593113568) · [Gumroad](https://mueller86.gumroad.com/l/xyjmdr)
+- GPO-Bericht: [Etsy](https://www.etsy.com/listing/4593129111) · [Gumroad](https://mueller86.gumroad.com/l/wdosl)
+- Anmelde- und Sperrbericht: [Etsy](https://www.etsy.com/listing/4593157082) · [Gumroad](https://mueller86.gumroad.com/l/ztktaaq)
+- Rechner-Inventar aus Active Directory: [Etsy](https://www.etsy.com/listing/4593088535) · [Gumroad](https://mueller86.gumroad.com/l/zzycdd)
+- Dateiserver-Bericht: [Etsy](https://www.etsy.com/listing/4612420692) · [Gumroad](https://mueller86.gumroad.com/l/wbbwj)
+- Windows-Rechnerbericht: [Etsy](https://www.etsy.com/listing/4616020701) · [Gumroad](https://mueller86.gumroad.com/l/wmhfk)
+- Exchange-Postfachbericht: [Etsy](https://www.etsy.com/listing/4614916333) · [Gumroad](https://mueller86.gumroad.com/l/gkdllj)
+- Exchange-Kalenderrechte-Bericht: [Etsy](https://www.etsy.com/listing/4614799790) · [Gumroad](https://mueller86.gumroad.com/l/iabfb)
+- Exchange-Nachrichtenverfolgung: [Etsy](https://www.etsy.com/listing/4614785975) · [Gumroad](https://mueller86.gumroad.com/l/msria)
+- Active Directory Prüfskript-Paket: [Etsy](https://www.etsy.com/listing/4611942401) · [Gumroad](https://mueller86.gumroad.com/l/awzjtc)
+
+Vorlagen und Checklisten (Notfallplan, Backup, Passwortrichtlinie, Onboarding, Homeoffice, Netzwerk-Dokumentation): [Etsy](https://www.etsy.com/shop/ITAdminToolsbyMM) · [Gumroad](https://mueller86.gumroad.com)
+<!-- querverweis:ende -->
+
 ## Hinweise
 
 - Der Bericht enthält Konto- und Gruppennamen – bitte vertraulich behandeln.
@@ -61,4 +86,4 @@ Dazu kommen der **Kerberos-Altlasten-Check** (Delegierung, schwache Verschlüsse
 
 ### English
 
-Free, read-only PowerShell script that lists who has administrator rights in an Active Directory (including nested groups) and checks those accounts in 7 points: count, inactivity, password age, password never expires, mailbox on admin account, Protected Users membership and effective password policy. German HTML report with findings and recommendations. Nothing is changed and no data leaves the machine. Run: `powershell -ExecutionPolicy Bypass -File .\Privilegierte-Konten-Check.ps1`.
+Free, read-only PowerShell script that lists who has administrator rights in an Active Directory (including nested groups) and checks those accounts in 7 points: count, inactivity, password age, password never expires, mailbox on admin account, Protected Users membership and effective password policy. HTML report in German or English (`-Language de|en`) with findings and recommendations. Nothing is changed and no data leaves the machine. Run: `powershell -ExecutionPolicy Bypass -File .\Privilegierte-Konten-Check.ps1`.
