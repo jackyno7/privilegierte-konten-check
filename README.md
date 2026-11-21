@@ -1,6 +1,6 @@
 # Privilegierte-Konten-Check – wer hat Administratorrechte im Active Directory?
 
-Kostenloses PowerShell-Skript: zeigt, **wer in Ihrem Active Directory Administratorrechte hat**, auch über verschachtelte Gruppen, und prüft diese Konten in **7 Punkten**. Ergebnis ist ein übersichtlicher **HTML-Bericht auf Deutsch oder Englisch** (`-Language de|en`, Standard je nach Windows-Sprache). Es arbeitet **ausschließlich lesend**: Es ändert nichts, legt nichts an und überträgt keine Daten.
+Kostenloses PowerShell-Skript: zeigt, **wer in Ihrem Active Directory Administratorrechte hat**, auch über verschachtelte Gruppen, und prüft diese Konten in **7 Punkten**. Ergebnis ist ein übersichtlicher **HTML-Bericht auf Deutsch oder Englisch** (`-Language de|en`, Standard je nach Windows-Sprache). Es arbeitet **ausschließlich lesend**: Es ändert nichts, legt keine Objekte an und sendet keine Daten an Dritte oder ins Internet.
 
 ![Beispielbericht](Beispielbericht.png)
 
@@ -87,7 +87,7 @@ Vorlagen und Checklisten (Notfallplan, Backup, Passwortrichtlinie, Onboarding, H
 
 ### English
 
-Free, read-only PowerShell script that lists who has administrator rights in an Active Directory (including nested groups) and checks those accounts in 7 points: count, inactivity, password age, password never expires, mailbox on admin account, Protected Users membership and effective password policy. HTML report in German or English (`-Language de|en`) with findings and recommendations. Nothing is changed and no data leaves the machine. Run: `powershell -ExecutionPolicy Bypass -File .\Privilegierte-Konten-Check.ps1`.
+Free, read-only PowerShell script that lists who has administrator rights in an Active Directory (including nested groups) and checks those accounts in 7 points: count, inactivity, password age, password never expires, mailbox on admin account, Protected Users membership and effective password policy. HTML report in German or English (`-Language de|en`) with findings and recommendations. Nothing is changed and no data is sent to third parties or the internet; the report stays local. Run: `powershell -ExecutionPolicy Bypass -File .\Privilegierte-Konten-Check.ps1`.
 
 <!-- querverweis-en:anfang -->
 #### All scripts and templates
