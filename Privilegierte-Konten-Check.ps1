@@ -18,8 +18,8 @@
     https://www.etsy.com/shop/ITAdminToolsbyMM
 
 .DESCRIPTION
-    The script works exclusively READ-ONLY. It changes nothing in Active Directory, creates nothing, deletes nothing and
-    transfers no data. It writes exactly one HTML file (and optionally CSV files) to the specified
+    The script works exclusively READ-ONLY. It changes nothing in Active Directory, creates no objects, deletes nothing and
+    sends no data to third parties or the internet. It writes exactly one HTML file (and optionally CSV files) to the specified
     output folder. Members (also via nested groups) of Domain Admins, Organization Management, Schema Admins, Administrators, Account Operators, Server Operators and Backup Operators are considered privileged.
     The groups are found by their fixed identifiers (SIDs), so the script works in any Windows language.
 
@@ -35,8 +35,8 @@
     not the nesting path.
 
     Deutsch:
-    Das Skript arbeitet ausschließlich LESEND. Es ändert nichts im Active Directory, legt nichts an, löscht nichts und
-    überträgt keine Daten. Es schreibt genau eine HTML-Datei (auf Wunsch zusätzlich CSV-Dateien) in den angegebenen
+    Das Skript arbeitet ausschließlich LESEND. Es ändert nichts im Active Directory, legt keine Objekte an, löscht nichts und
+    sendet keine Daten an Dritte oder ins Internet. Es schreibt genau eine HTML-Datei (auf Wunsch zusätzlich CSV-Dateien) in den angegebenen
     Ausgabeordner. Als privilegiert gelten Mitglieder (auch über verschachtelte Gruppen) von Domänen-Admins,
     Organisations-Admins, Schema-Admins, Administratoren, Konten-Operatoren, Server-Operatoren und Sicherungs-Operatoren.
     Die Gruppen werden über ihre festen Kennungen (SID) gefunden, das Skript arbeitet deshalb in jeder Windows-Sprache.
